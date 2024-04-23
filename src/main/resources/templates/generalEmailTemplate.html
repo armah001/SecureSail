@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        @media only screen and (min-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            td {
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            tr {
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            table {
+                max-width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<center style="width: 100%; table-layout: fixed; padding-top: 50px">
+    <table width="100%" style="border-spacing: 0px; margin: 0px auto; width: 100%; max-width: 600px; font-family: sans-serif; color: rgb(74, 74, 74);">
+        <tbody>
+        <tr>
+            <td height="10" style="background-color: #8a80db; padding: 0px"></td>
+        </tr>
+        <tr>
+            <td align="center" style="padding-top: 20px">
+                <a href="/" target="_blank"><img src="https://plagiarism-media.s3.eu-west-1.amazonaws.com/logoEmail.png" alt="Logo" width="130px" style="border: 0px" class="CToWUd" data-bit="iit" /></a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="padding: 0px; text-align: center">
+                <p style="font-size: 20px"><strong th:text="${header}"></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="padding: 0px; color: rgb(136, 136, 136); font-size: 16px; font-family: Ubuntu, sans-serif; line-height: 24px; border-spacing: 0px;">
+                <p style="padding: 0px; text-align: match-parent;" th:utext="${text}"></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding: 20px 0px; text-align: center">
+                <a th:if="${not #strings.isEmpty(buttonText)}"
+                   style="font-size: 14px; padding: 10px 20px; text-decoration: none; border-radius: 5px; background-color: #8a80db; color: white; font-family: Ubuntu, sans-serif; font-weight: bold;"
+                   th:href="${verificationUrl}" th:text="${buttonText}"></a>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-top: 15px; font-size: 14px; color: #8a80db; font-family: Ubuntu, sans-serif; font-weight: bold; text-align: center;">
+                Email us : <a href="upskilling@gmail.com" style="color: rgb(136, 136, 136); font-size: 15px; font-family: Ubuntu, sans-serif; text-decoration: none;" target="_blank">upskilling@gmail.com</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Footer -->
+    <table width="100%" style="border-spacing: 0px; margin: 0px auto; width: 100%; max-width: 600px; font-family: sans-serif; color: rgb(74, 74, 74);">
+        <tbody>
+        <tr>
+            <td align="center" style="padding-top: 15px; font-size: 12px; color: #8a80db; font-family: Ubuntu, sans-serif; font-weight: bold; text-align: center;">
+                &copy; 2024 Service Finder Provider
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</center>
+</body>
+
+</html>
